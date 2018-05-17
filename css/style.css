@@ -1,0 +1,23 @@
+body {
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+table {
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+}
+#js-tbody {
+  width: 400px;
+  height: 1000px;
+  border: 1px solid #d3d3d3;
+}
+
+.getUserId, .getUsers {
+  margin-bottom: 20px;
+}

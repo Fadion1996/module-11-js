@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Module-11-js</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="getUsers">
+          <input id="get-all-users" type="submit" value="Get All Users"></input>
+          <!-- Шаблон одной строки для tbody -->
+          <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+          <script type="text/template" id="table-row">
+            <tr scope="row">
+              <td><%- id%></td>
+              <td><%- name%></td>
+              <td><%- age%></td>
+            </tr>
+          </script>
+        </div>
+        <div class="getUserId">
+          <input id="user-id" type="text" name="" value="" placeholder="User Id">
+          <input id="get-user" type="submit" name="" value="Get User">
+        </div>
+        <div class="addUser">
+          <input id="add-user-name" type="text" name="" value="" placeholder="Name">
+          <input id="add-user-age" type="number" name="" value="" placeholder="Age">
+          <input id="add-user" type="submit" name="" value="Add user">
+          <p id="result-add">Ansver add</p>
+        </div>
+        <div class="removeUserId">
+          <input id="remove-user-id" type="text" name="" value="" placeholder="User Id">
+          <input id="get-remove-user" type="submit" name="" value="Remove user">
+          <p id="result-remove">Ansver remove</p>
+        </div>
+        <div class="updateUsers">
+          <input id="user-id-update" type="text" name="" value="" placeholder="User Id">
+          <input id="update-users" type="submit" name="" value="Update">
+          <p id="result-update">Ansver update</p>
+        </div>
+      </div>
+      <div class="right">
+      </div>
+      <div class="results">
+        <table>
+            <tbody id="js-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
